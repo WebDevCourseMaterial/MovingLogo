@@ -1,0 +1,46 @@
+/*
+ * Builds up the html used within the Moving Logo page.
+ * Author: fisherds@gmail.com (Dave Fisher)
+ */
+
+{namespace movingr.templates.movinglogo}
+
+/**
+ * Loads the full body of the Moving Logo page.
+ */
+{template .body}
+  {call .topBar /}
+  {call .mouseArea /}
+{/template}
+
+/**
+ * Loads the title and buttons.
+ */
+{template .topBar}
+  <div class='{css button-group}'>
+    <h1>First day demo - Moving Logo</h1>
+    <div id="move-up" class="{css button} {css goog-css3-button-collapse-right}">
+      Up
+    </div>
+    <div id="move-down" class="{css button} {css goog-css3-button-collapse-right} {css goog-css3-button-collapse-left}">
+      Down
+    </div>
+    <div id="move-left" class="{css button} {css goog-css3-button-collapse-right} {css goog-css3-button-collapse-left}">
+      Left
+    </div>
+    <div id="move-right" class="{css button} {css goog-css3-button-collapse-left}">
+      Right
+    </div>
+    <div id="reset" class="{css button} {css red-button}">
+      Reset
+    </div>
+  </div>
+{/template}
+
+/**
+ * Mouse area and logo image.
+ */
+{template .mouseArea}
+  <img id='logo' alt="Rose-Logo" src="images/RoseLogo.png">
+  <div class='{css mouse-area}'></div>
+{/template}
