@@ -1,0 +1,1 @@
+First day demo with a moving Rose-Hulman logo
