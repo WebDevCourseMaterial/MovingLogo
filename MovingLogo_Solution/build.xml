@@ -11,7 +11,7 @@
 
   <!-- Path to this build file from base.js (used by depswriter.py) -->
   <property name="fromBase.dir"
-    value="../../../../gitRepos/MovingLogo/MovingLogo_Solution" />
+    value="../../../../gitrepos/MovingLogo/MovingLogo_Solution" />
 	
 	<!-- Set to false for optimized production compiling.
 	     Set to true for un-optimized whitespace only compiling for debugging work. -->
@@ -140,6 +140,7 @@
         <arg line="${pretty_print_style_arg}" />
         <arg line='--output-file "@{outputfile}"' />
         <arg line='--output-renaming-map-format CLOSURE_COMPILED' />
+        <arg line='--allowed-non-standard-function blur' />
         <arg line='--rename CLOSURE' />
   		<arg line='--output-renaming-map "@{renamingmap}"' />
   		<inputfilenames />

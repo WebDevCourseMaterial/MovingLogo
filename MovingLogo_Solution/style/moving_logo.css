@@ -64,7 +64,7 @@ div.red-button {
   transition: all 500ms ease-out;
 }
 
-.spin {
+.rotate {
   -moz-transform: rotate(30deg);
   -webkit-transform: rotate(30deg);
   -o-transform: rotate(30deg);
@@ -72,7 +72,7 @@ div.red-button {
   transform: rotate(30deg); 
 }
 
-.big {
+.scale {
   -moz-transform: scale(2);
   -webkit-transform: scale(2);
   -o-transform: scale(2);
@@ -80,7 +80,7 @@ div.red-button {
   transform: scale(2); 
 }
 
-.big.spin {
+.rotate.scale {
   -moz-transform: scale(2) rotate(30deg);
   -webkit-transform: scale(2) rotate(30deg);
   -o-transform: scale(2) rotate(30deg);

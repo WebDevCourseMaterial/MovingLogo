@@ -215,15 +215,16 @@ movingr.MovingLogoController.prototype.onKeyEvent_ = function(e) {
       this.logoLeft_ = movingr.MovingLogoController.INITIAL_LOGO_LEFT;
       this.logoTop_ = movingr.MovingLogoController.INITIAL_LOGO_TOP;
       break;
-    case goog.events.KeyCodes.S:
-      goog.dom.classes.add(goog.dom.getElement('logo'), goog.getCssName('spin'));
+    case goog.events.KeyCodes.R:
+      goog.dom.classes.add(goog.dom.getElement('logo'), goog.getCssName('rotate'));
       break;
-    case goog.events.KeyCodes.B:
-      goog.dom.classes.add(goog.dom.getElement('logo'), goog.getCssName('big'));
+    case goog.events.KeyCodes.S:
+      goog.dom.classes.add(goog.dom.getElement('logo'), goog.getCssName('scale'));
       break;
     case goog.events.KeyCodes.U:
       goog.dom.classes.remove(goog.dom.getElement('logo'),
-          goog.getCssName('spin'), goog.getCssName('big'));
+          goog.getCssName('rotate'),
+          goog.getCssName('scale'));
       break;
   }
   this.updateImage_();
