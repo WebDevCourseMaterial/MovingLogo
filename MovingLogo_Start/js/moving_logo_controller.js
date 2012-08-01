@@ -124,18 +124,9 @@ movingr.MovingLogoController.prototype.init_ = function() {
   goog.soy.renderElement(this.container_, movingr.templates.movinglogo.body);
   
   // Add control objects to the buttons.
-  var movementButtonEls = goog.dom.getElementsByClass(
-      goog.getCssName('button'));
-  for (var i = 0; i < movementButtonEls.length; i++) {
-    var buttonControl = new goog.ui.CustomButton('',
-        goog.ui.Css3ButtonRenderer.getInstance());
-    buttonControl.setSupportedState(goog.ui.Component.State.FOCUSED, false);
-    buttonControl.setSupportedState(goog.ui.Component.State.DISABLED, false);
-    buttonControl.decorate(movementButtonEls[i]);
-    this.eventHandler_.listen(buttonControl, goog.ui.Component.EventType.ACTION,
-        this.buttonClick_);
-    this.buttonControls_.push(buttonControl);
-  }
+  
+  // TODO: Add a Custom Button to all the elements of class 'button'
+  // Push the control objects into the buttonControls_ array for later disposal.
 
   // Listen for key press events.
   this.keyHandler_ = new goog.events.KeyHandler(goog.dom.getDocument());

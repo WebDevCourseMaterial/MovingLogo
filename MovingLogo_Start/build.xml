@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="Moving Logo" default="build">
+<project name="Moving Logo Start" default="build">
 
   <!-- Defining folder locations and other properties. -->
   <property name="closure.dir" value="${basedir}/../../../closure" />
@@ -11,7 +11,7 @@
 
   <!-- Path to this build file from base.js (used by depswriter.py) -->
   <property name="fromBase.dir"
-      value="../../../../gitrepos/MovingLogo/MovingLogo_Solution" />
+      value="../../../../gitrepos/MovingLogo/MovingLogo_Start" />
 	
   <!-- Set to false for optimized production compiling.
 	   Set to true for un-optimized whitespace only compiling for debugging work. -->

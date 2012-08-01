@@ -1,0 +1,89 @@
+/*
+  Websites that help with CSS generation:
+    http://css3generator.com/
+    http://www.colorzilla.com/gradient-editor/
+*/
+
+body {
+  background-color: #B8C5D3;
+  background-image: url('../images/noise.jpg');
+  color: #A1022D;
+  font: normal 10pt Arial, sans-serif;
+  overflow: hidden;
+}
+
+h1 {
+  font-family:"Comic Sans MS", cursive, sans-serif;
+  margin: 5px;
+  overflow: hidden;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.button-group {
+  text-align: center;
+}
+
+div.red-button {
+  color: white;
+  background: #6b021e; /* Old browsers */
+  /* @alternate */ background: -moz-linear-gradient(top,  hsl(344,96%,40%) 60%, hsl(345,96%,20%) 90%); /* FF3.6+ */
+  /* @alternate */ background: -webkit-linear-gradient(top,  hsl(344,96%,40%) 60%,hsl(345,96%,20%) 90%); /* Chrome10+,Safari5.1+ */
+  /* @alternate */ background: -o-linear-gradient(top,  hsl(344,96%,40%) 60%,hsl(345,96%,20%) 90%); /* Opera 11.10+ */
+  /* @alternate */ background: -ms-linear-gradient(top,  hsl(344,96%,40%) 60%,hsl(345,96%,20%) 90%); /* IE10+ */
+  /* @alternate */ background: linear-gradient(top,  hsl(344,96%,40%) 60%,hsl(345,96%,20%) 90%); /* W3C */
+      
+  margin-left: 10px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.mouse-area {
+  background: #FFF8ED;
+  border: 3px solid hsl(0, 0%, 0%);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 15px rgba(0, 0, 0, .8);    
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, .8);
+  display: inline-block;
+  height: 500px;
+  margin-left: 5%;
+  margin-top: 10px;
+  width: 90%;
+}
+
+#logo {
+  left: 100px;
+  position: absolute;
+  top: 100px;
+  -webkit-transition: all 500ms ease-out;
+  -moz-transition: all 500ms ease-out;
+  -ms-transition: all 500ms ease-out;
+  -o-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+.rotate {
+  -moz-transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -o-transform: rotate(30deg);
+  -ms-transform: rotate(30deg);
+  transform: rotate(30deg); 
+}
+
+.scale {
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2); 
+}
+
+.rotate.scale {
+  -moz-transform: scale(2) rotate(30deg);
+  -webkit-transform: scale(2) rotate(30deg);
+  -o-transform: scale(2) rotate(30deg);
+  -ms-transform: scale(2) rotate(30deg);
+  transform: scale(2) rotate(30deg); 
+}
