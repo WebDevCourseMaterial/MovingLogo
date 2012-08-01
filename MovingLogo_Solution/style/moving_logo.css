@@ -40,7 +40,13 @@ div.red-button {
 }
 
 .mouse-area {
-  background: #FFF8ED;
+  /* @alternate */ background: #fff8ed;
+  /* @alternate */ background: -moz-linear-gradient(top,  #fff8ed 37%, #e5ded5 99%);
+  /* @alternate */ background: -webkit-gradient(linear, left top, left bottom, color-stop(37%,#fff8ed), color-stop(99%,#e5ded5)); 
+  /* @alternate */ /*background: -webkit-linear-gradient(top,  #fff8ed 37%,#e5ded5 99%); */
+  /* @alternate */ background: -o-linear-gradient(top,  #fff8ed 37%,#e5ded5 99%);
+  /* @alternate */ background: -ms-linear-gradient(top,  #fff8ed 37%,#e5ded5 99%);
+  /* background: linear-gradient(to bottom,  #fff8ed 37%,#e5ded5 99%); */
   border: 3px solid hsl(0, 0%, 0%);
   -webkit-border-radius: 10px;
   border-radius: 10px;

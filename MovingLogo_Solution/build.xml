@@ -35,6 +35,10 @@
         <arg value="style/css3button.css" />
         <arg value="style/moving_logo.css" />
       </inputfilenames>
+      <extraflags>
+        <arg line='--allow-unrecognized-functions' />
+        <arg line='--allow-unrecognized-properties' />
+      </extraflags>
   	</generate-stylesheet>
   </target>
 

@@ -119,28 +119,28 @@ function testOnKeyEvent_Right() {
       movingLogoController.logoLeft_);
 }
 
-function testOnKeyEvent_S() {
+function testOnKeyEvent_R() {
   var e = {preventDefault: function(){}};
-  e.keyCode = goog.events.KeyCodes.S;
+  e.keyCode = goog.events.KeyCodes.R;
   movingLogoController.onKeyEvent_(e);
   var logo = goog.dom.getElement('logo');
-  assertTrue(goog.dom.classes.has(logo, 'spin'));
+  assertTrue(goog.dom.classes.has(logo, 'rotate'));
 }
 
 
 function testOnKeyEvent_U() {
   var e = {preventDefault: function(){}};
-  e.keyCode = goog.events.KeyCodes.B;
-  movingLogoController.onKeyEvent_(e);
   e.keyCode = goog.events.KeyCodes.S;
   movingLogoController.onKeyEvent_(e);
+  e.keyCode = goog.events.KeyCodes.R;
+  movingLogoController.onKeyEvent_(e);
   var logo = goog.dom.getElement('logo');
-  assertTrue(goog.dom.classes.has(logo, 'big'));
-  assertTrue(goog.dom.classes.has(logo, 'spin'));
+  assertTrue(goog.dom.classes.has(logo, 'scale'));
+  assertTrue(goog.dom.classes.has(logo, 'rotate'));
   e.keyCode = goog.events.KeyCodes.U;
   movingLogoController.onKeyEvent_(e);
-  assertFalse(goog.dom.classes.has(logo, 'big'));
-  assertFalse(goog.dom.classes.has(logo, 'spin'));
+  assertFalse(goog.dom.classes.has(logo, 'scale'));
+  assertFalse(goog.dom.classes.has(logo, 'rotate'));
 }
 
 function testMouseMove() {
