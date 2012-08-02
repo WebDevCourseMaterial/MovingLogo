@@ -72,11 +72,17 @@ BUILD SUCCESSFUL
 Docs about Closure's Linter: https://developers.google.com/closure/utilities/<br>
 JavaScript Guidelines checked: http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml<br>
 Project home: http://code.google.com/p/closure-linter/<br>
-Checkout command:
+Checkout command (setup step is optional. Adds  to modify the /usr/local/bin):
 
     svn checkout http://closure-linter.googlecode.com/svn/trunk/ closure-linter
+    cd closure-linter
+    cat README
+    python ./setup.py install
+    cd ..
 
-No building step necessary, just a checkout.
+After installing, you get two helper applications installed into /usr/local/bin:<br>
+gjslint.py - runs the linter and checks for errors.<br>
+fixjsstyle.py - tries to fix errors automatically.<br>
 
 <h3>Stylesheets</h3>
 Docs about Closure's Stylesheet minification: http://code.google.com/p/closure-stylesheets/<br>
