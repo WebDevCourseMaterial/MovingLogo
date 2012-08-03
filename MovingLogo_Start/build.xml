@@ -23,16 +23,16 @@
     <delete dir="${build.dir}" />
     <mkdir dir="${build.dir}"/>
     <mkdir dir="${build.dir}/production/js"/>
-    <mkdir dir="${build.dir}/production/style"/>
+    <mkdir dir="${build.dir}/production/stylesheets"/>
   </target>
 
   <target name="stylesheets"
       description="Generate a combined, minified css file.">
   	<generate-stylesheet
-        outputfile = '${build.dir}/production/style/moving_logo.css'>
+        outputfile = '${build.dir}/production/stylesheets/moving_logo.css'>
       <inputfilenames>
-        <arg value="style/common.css" />
-        <arg value="style/moving_logo.css" />
+        <arg value="stylesheets/common.css" />
+        <arg value="stylesheets/moving_logo.css" />
       </inputfilenames>
       <extraflags>
         <arg line='--allow-unrecognized-functions' />
