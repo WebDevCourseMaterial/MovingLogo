@@ -11,6 +11,9 @@ var movingLogoController;
 var stubs = new goog.testing.PropertyReplacer();
 
 function setUpPage() {
+  goog.debug.LogManager.getRoot().setLevel(goog.debug.Logger.Level.INFO);
+  var logconsole = new goog.debug.Console();
+  logconsole.setCapturing(true);
 }
 
 

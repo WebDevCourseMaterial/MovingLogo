@@ -1,0 +1,22 @@
+goog.setCssNameMapping({
+  "goog": "a",
+  "inline": "b",
+  "block": "c",
+  "button": "e",
+  "css3": "d",
+  "hover": "f",
+  "focused": "g",
+  "active": "h",
+  "open": "i",
+  "disabled": "j",
+  "primary": "k",
+  "right": "m",
+  "collapse": "l",
+  "left": "n",
+  "group": "o",
+  "red": "p",
+  "mouse": "q",
+  "area": "r",
+  "rotate": "s",
+  "scale": "t"
+});
