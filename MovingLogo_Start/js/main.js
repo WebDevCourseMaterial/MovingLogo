@@ -5,7 +5,7 @@
  * @author fisherds@gmail.com (Dave Fisher)
  */
 
-goog.provide('movingr.Main');
+goog.provide('movingr.main');
 
 goog.require('goog.debug.Console');
 goog.require('goog.debug.LogManager');
